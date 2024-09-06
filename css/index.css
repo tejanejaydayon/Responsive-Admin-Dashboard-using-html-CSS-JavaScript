@@ -153,7 +153,7 @@ aside .logo span h2 {
     gap: 1.6rem;
 }
 
-aside .top .close {
+aside .top .close span {
     display: none;
 }
 
@@ -527,4 +527,84 @@ main table tbody tr:last-child td {
         display: flex;
         text-align: center;
     }
+}
+
+/* Media Query For Phones */
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    aside {
+        position: fixed;
+        width: 18rem;
+        background-color: var(--clr-white);
+        display: none;
+    }
+
+    aside .sidebar h3 {
+        display: inline;
+    }
+
+    aside .top .logo h2 {
+        display: inline;
+    }
+
+    aside .top .close span {
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        margin-right: 30px;
+        font-size: 35px;
+    }
+
+    main .insights {
+        padding: 40px;
+    }
+
+    main .recent_orders {
+        padding: 40px;
+        margin: 0 auto;
+    }
+
+    .right .top {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: var(--clr-white);
+        width: 100%;
+        height: 4.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .right .top .profile {
+        position: absolute;
+        left: 70%;
+    }
+
+    .right .top button {
+        display: inline;
+        background-color: transparent;
+        color: var(--clr-dark);
+        position: absolute;
+        left: 2rem;
+        cursor: pointer;
+    }
+
+    .right .recent_udpates {
+        padding: 30px;
+    }
+
+    .right .recent_analytics {
+        padding: 30px;
+    }
+
+    .right .recent_add {
+        padding: 30px;
+    }
+
 }
