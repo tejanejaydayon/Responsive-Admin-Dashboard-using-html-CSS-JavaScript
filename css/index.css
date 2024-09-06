@@ -541,7 +541,17 @@ main table tbody tr:last-child td {
         position: fixed;
         width: 18rem;
         background-color: var(--clr-white);
+        z-index: 3;
         display: none;
+
+        left: -100px;
+        animation: menuAni .8s forwards;
+    }
+
+    @keyframes menuAni {
+        to {
+            left: 0;
+        }
     }
 
     aside .sidebar h3 {
@@ -579,6 +589,7 @@ main table tbody tr:last-child td {
         display: flex;
         align-items: center;
         justify-content: center;
+        z-index: 2;
     }
 
     .right .top .profile {
