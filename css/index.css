@@ -49,12 +49,22 @@
 }
 
 body {
-    font-size: 'Poppins', 'sans-serif';
+    font-family: 'Poppins', 'san-serif';
     width: 100vw;
     height: 100vh;
     font-size: 0.88rem;
     user-select: none;
     overflow-x: hidden;
+
+}
+
+.container {
+    width: 96%;
+    display: grid;
+    grid-template-columns: 14rem auto 14rem;
+    gap: 1.8rem;
+    overflow-x: hidden;
+    margin: 0 auto;
 }
 
 /* styles for typography, colors, and profile image img */
