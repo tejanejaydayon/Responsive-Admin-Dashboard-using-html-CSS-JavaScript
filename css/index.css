@@ -233,6 +233,7 @@ main input {
     background-color: transparent;
     border: 0;
     outline: 0;
+    color: var(--clr-dark);
 }
 
 main .date {
@@ -241,6 +242,7 @@ main .date {
     margin-top: 1.3rem;
     padding: 0.5rem;
     border-radius: var(--border-radius-1);
+    color: var(--clr-dark);
 }
 
 
@@ -287,7 +289,21 @@ main .insights .middle {
 
 main .insights .middle h1 {
     font-size: 1.2rem;
+    color: var(--clr-dark);
 }
+
+main .insights .middle h3 {
+    color: var(--clr-dark);
+}
+
+main .insights .middle .number {
+    color: var(--clr-dark);
+}
+
+main .insights small {
+    color: var(--clr-dark);
+}
+
 
 main .insights .progress {
     width: 68px;
@@ -360,6 +376,14 @@ main table tbody tr td {
 
 main table tbody tr:last-child td {
     border: none;
+}
+
+main table thead th {
+    color: var(--clr-dark);
+}
+
+main table tbody tr td {
+    color: var(--clr-dark);
 }
 
 /* right */
@@ -449,6 +473,10 @@ main table tbody tr:last-child td {
 }
 
 .right .recent_analytics h2 {
+    color: var(--clr-dark);
+}
+
+.right .recent_analytics h3 {
     color: var(--clr-dark);
 }
 
