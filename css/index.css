@@ -157,3 +157,52 @@ aside .logo span {
 aside .top .close {
     display: none;
 }
+
+/* sidebar */
+
+aside .sidebar {
+    height: 85vh;
+    background-color: var(--clr-white);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 1rem;
+}
+
+aside .sidebar a {
+    height: 3.2rem;
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+    margin-left: 2rem;
+    transition: all .3s ease-in;
+}
+
+aside .sidebar a span {
+    font-size: 1.2rem;
+    transition: all .3s ease-in;
+}
+
+aside .sidebar a:last-child {
+    position: absolute;
+    bottom: 3rem;
+    width: 100%;
+}
+
+aside .sidebar a.active {
+    background-color: var(--clr-light);
+    margin-left: 0;
+}
+
+aside .sidebar a:hover {
+    color: var(--clr-primary);
+    margin-left: 1rem;
+    transition: all .3s ease;
+}
+
+aside .sidebar a.active::before {
+    content: "";
+    width: 6px;
+    height: 100%;
+    background-color: var(--clr-primary);
+}
