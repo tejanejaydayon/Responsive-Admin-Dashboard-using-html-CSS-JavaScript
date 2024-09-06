@@ -56,3 +56,71 @@ body {
     user-select: none;
     overflow-x: hidden;
 }
+
+/* styles for typography, colors, and profile image img */
+
+a {
+    color: var(--clr-dark);
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+h3 {
+    font-size: 0.87rem;
+}
+
+h4 {
+    font-size: 0.8rem;
+}
+
+
+h5 {
+    font-size: 0.77rem;
+    font-weight: 500;
+}
+
+small {
+    font-size: 0.75rem;
+}
+
+.profile-photo img {
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.text-muted {
+    color: var(--clr-info-dark);
+}
+
+p {
+    color: var(--clr-dark-variant);
+}
+
+b {
+    color: var(--clr-dark);
+}
+
+.primary {
+    color: var(--clr-primary);
+}
+
+.success {
+    color: var(--clr-success);
+}
+
+.danger {
+    color: var(--clr-danger);
+}
+
+.warning {
+    color: var(--clr-warnig);
+}
