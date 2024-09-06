@@ -55,6 +55,7 @@ body {
     font-size: 0.88rem;
     user-select: none;
     overflow-x: hidden;
+    background-color: var(--clr-color-background);
 
 }
 
@@ -133,4 +134,26 @@ b {
 
 .warning {
     color: var(--clr-warnig);
+}
+
+/* aside */
+
+aside {
+    height: 100vh;
+}
+
+aside .top {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--clr-white);
+    margin-top: 1.4rem;
+}
+
+aside .logo span {
+    display: flex;
+    gap: 1.6rem;
+}
+
+aside .top .close {
+    display: none;
 }
