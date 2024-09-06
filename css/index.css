@@ -60,11 +60,10 @@ body {
 }
 
 .container {
-    width: 96%;
     display: grid;
     grid-template-columns: 14rem auto 14rem;
     gap: 1.8rem;
-    overflow-x: hidden;
+    width: 96%;
     margin: 0 auto;
 }
 
@@ -149,7 +148,7 @@ aside .top {
     margin-top: 1.4rem;
 }
 
-aside .logo span {
+aside .logo span h2 {
     display: flex;
     gap: 1.6rem;
 }
@@ -248,7 +247,7 @@ main .date {
 main .insights {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.8rem;
+    gap: 1rem;
     margin-top: 1.6rem;
 }
 
@@ -284,6 +283,10 @@ main .insights .middle {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+main .insights .middle h1 {
+    font-size: 1.2rem;
 }
 
 main .insights .progress {
@@ -495,4 +498,33 @@ main table tbody tr:last-child td {
     border: 2px dashed var(--clr-dark-variant);
     color: var(--clr-dark-variant);
     cursor: pointer;
+}
+
+
+/* Media Query */
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 94%;
+        grid-template-columns: 7rem auto 14rem;
+    }
+
+    aside .sidebar h3 {
+        display: none;
+    }
+
+    aside .sidebar a:last-child {
+        position: relative;
+        margin-top: 2.8rem;
+    }
+
+    main .insights {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    aside .logo h2 {
+        display: flex;
+        text-align: center;
+    }
 }
